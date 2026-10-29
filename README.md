@@ -10,11 +10,21 @@ His book *The Massive AI Manual* and hub site dylanasdale.github.io explain AI
 "like a friend would": plain English, step by step, never condescending.
 
 This kit follows the same style: clear, warm, polished, tested, local-first.
-Everything lives on your computer. No signup, no email required, no tracking.
+Everything lives on your computer. No signup, no email required, no tracking,
+no personal data stored anywhere but your own device.
+
+## Who this is for
+
+Anyone looking for work who wants simple, ready-to-use tools — especially if
+job applications feel overwhelming. The examples use plain language and
+placeholders like `[Your Name]`, so you can fill in your own details at your
+own pace. Whether you're returning to work, switching fields, or applying for
+your first role, this kit is built to be beginner-friendly.
 
 ## What's inside
 
-All files are in `kit/` (Markdown) and `printable/` (HTML ready to print).
+All files live in `kit/` (Markdown to read) and `printable/` (HTML ready to
+print).
 
 | Resource | Markdown | Printable HTML |
 |---|---|---|
@@ -23,20 +33,30 @@ All files are in `kit/` (Markdown) and `printable/` (HTML ready to print).
 | Interview prep questions | `kit/interview-prep.md` | `printable/interview-prep.html` |
 | Job application tracker | `kit/application-tracker.md` | `printable/application-tracker.html` |
 | Networking email scripts | `kit/networking-emails.md` | `printable/networking-emails.html` |
-| Everything, one page | — | `printable/kit-all.html` |
+| Everything in one page | — | `printable/kit-all.html` |
 
-## How to use
+## How to use (step by step)
 
-1. **Read the Markdown** files in `kit/` on any device, or
-2. **Open any HTML file** in `printable/` in your browser and press `Ctrl+P` (or `Cmd+P`) to print. Each page is styled for clean printing with page breaks between sections.
-3. Fill in the bracketed placeholders like `[Your Name]` with your own details. Save copies for each job you apply to.
-4. The tracker is a living document: update it every time you apply or hear back.
+1. **Pick a resource.** Read the Markdown file in `kit/` on your phone or
+   computer, or open the matching HTML file in `printable/` in your web
+   browser.
+2. **Print it.** With the HTML file open, press `Ctrl+P` (Windows/Linux) or
+   `Cmd+P` (Mac) to print. Each page is styled for clean printing, with page
+   breaks between sections. Want the whole kit at once? Open
+   `printable/kit-all.html`.
+3. **Fill in your details.** Replace every bracketed placeholder like
+   `[Your Name]` and `[Company]` with your own information. Save a copy for
+   each job you apply to.
+4. **Keep it current.** The application tracker is a living document — update
+   the status every time you apply or hear back, and set follow-up dates so
+   nothing slips through the cracks.
 
 ## No personal data
 
 This kit contains no secrets, API keys, or personal data. All examples use
-placeholders such as `[Your Name]` and `[Company]`. Fill in your own details
-locally and keep your files to yourself.
+placeholders such as `[Your Name]`, `[Company]`, and a sample phone number.
+Fill in your own details locally and keep your files to yourself. Nothing is
+sent to Asdale Dynamics or anyone else.
 
 ## License
 
