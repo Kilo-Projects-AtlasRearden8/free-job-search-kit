@@ -1,0 +1,209 @@
+/* Free Job-Search Kit — printable styles
+   Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC. MIT License. */
+
+:root {
+  --ink: #1a1a1a;
+  --muted: #4a4a4a;
+  --line: #d9d9d9;
+  --accent: #2563eb;
+  --accent-soft: #dbe7ff;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif;
+  color: var(--ink);
+  background: #f7f8fa;
+  font-size: 15px;
+}
+
+.page {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 32px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.site-header {
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.site-kicker {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+}
+
+.site-sub {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+h1, h2, h3 {
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+h1 { font-size: 24px; margin: 0 0 8px 0; }
+h2 { font-size: 17px; margin: 24px 0 8px 0; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+h2.first { margin-top: 0; }
+h3 { font-size: 14px; margin: 16px 0 6px 0; color: var(--muted); }
+
+p { margin: 0 0 12px 0; }
+ul, ol { margin: 4px 0 14px 0; padding-left: 22px; }
+li { margin: 0 0 6px 0; }
+
+blockquote {
+  margin: 12px 0 16px 0;
+  padding: 12px 16px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+pre {
+  margin: 8px 0 16px 0;
+  padding: 14px 16px;
+  background: #eeeeee;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    monospace;
+  font-size: 0.9em;
+}
+
+.code-block code { font-size: inherit; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 18px 0;
+  font-size: 13px;
+}
+
+th, td {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead { background: #f1f3f5; }
+tr { break-inside: avoid; }
+
+.section {
+  margin-bottom: 26px;
+  break-inside: avoid;
+}
+
+.section:last-child { margin-bottom: 0; }
+
+.page-break { break-before: page; }
+
+footer.kick {
+  margin-top: 30px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.credit {
+  font-weight: 700;
+}
+
+nav.index {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 32px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+nav.index ul { list-style: none; padding: 0; margin: 16px 0 0 0; }
+nav.index li { margin: 0 0 10px 0; font-size: 15px; }
+nav.index a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+nav.index a:hover { text-decoration: underline; }
+
+.note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+  html { background: #fff !important; -webkit-print-color-adjust: exact; }
+  body {
+    background: #fff !important;
+    font-size: 13.5px;
+    line-height: 1.45;
+    color: #000;
+    -webkit-print-color-adjust: exact;
+  }
+  .page, nav.index {
+    background: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+  .page { break-after: page; }
+  .page:last-child { break-after: auto; }
+  h2 { border-bottom-color: #000; }
+  pre, blockquote { background: #f2f2f2 !important; }
+  a { color: #000 !important; text-decoration: none; }
+  footer.kick { color: #000; }
+  table { break-inside: auto; }
+  tr { break-inside: avoid; }
+  .no-print { display: none !important; }
+}
+
+@page { size: Letter; margin: 18mm 16mm; }
